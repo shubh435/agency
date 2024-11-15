@@ -31,16 +31,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#top">Home </a>
+                  <a class="nav-link" href="#banner">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Services">Services</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about us">About Us</a>
+                  <a class="nav-link" href="#about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#testomonials">Testimonial</a>
+                  <a class="nav-link" href="#testimonials">Testimonial</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#footer">Contact us</a>
@@ -180,9 +180,13 @@
 </section>
 
 <!-- smooth Scroll -->
-<script src="smooth-scroll.js"></script>
+<script src="./smooth-scroll.js"></script>
 <script>
-	var scroll = new SmoothScroll('a[href*="#"]');
+  var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 900,
+      offset: 0,
+      easing: 'linear'
+  });
 </script>
 
 </body>
